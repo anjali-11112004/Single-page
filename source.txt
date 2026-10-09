@@ -1,0 +1,855 @@
+.portfolio {
+  padding: 50px 0;
+  background-color: linear-gradient(to bottom, #0b0210, #170524, #0b0210);
+}
+
+.slider-box {
+  width: 100%;
+  overflow: hidden;
+}
+
+.track {
+  display: flex;
+  gap: 100px;
+  width: max-content; /* important */
+  animation: scrollTrack 4s linear infinite;
+}
+
+.track:hover {
+  animation-play-state: paused;
+}
+
+.p-card {
+  width: 280px;
+  height: 350px;
+  overflow: hidden;
+  
+}
+
+.p-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes scrollTrack {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+
+
+
+
+
+<section class="portfolio" id="portfolio">
+    <div class="title-box">
+      <span class="script-text">Portfolio</span>
+      <h2>PORTFOLIO</h2>
+      <p class="subtitle">Real clients. Real beauty. My most loved makeup moments</p>
+    </div>
+
+    <div class="slider-box">
+      <div class="track">
+        <div class="p-card"><img src="https://picsum.photos/250/350?random=10" alt="Work 1"></div>
+        <div class="p-card"><img src="https://picsum.photos/250/350?random=11" alt="Work 2"></div>
+        <div class="p-card"><img src="https://picsum.photos/250/350?random=12" alt="Work 3"></div>
+        <div class="p-card"><img src="https://picsum.photos/250/350?random=13" alt="Work 4"></div>
+        <div class="p-card"><img src="https://picsum.photos/250/350?random=10" alt="Work 1"></div>
+        <div class="p-card"><img src="https://picsum.photos/250/350?random=11" alt="Work 2"></div>
+        <div class="p-card"><img src="https://picsum.photos/250/350?random=12" alt="Work 3"></div>
+        <div class="p-card"><img src="https://picsum.photos/250/350?random=13" alt="Work 4"></div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Makeup Artist Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="./index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  
+  <nav class="navbar">
+    <div class="logo">Splendid G</div>
+    
+    <input type="checkbox" class="menu-check">
+    <label class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </label>
+
+    <ul class="nav-links">
+      <li><a href="#home">HOME</a></li>
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#services">SERVICES</a></li>
+      <li><a href="#portfolio">PORTFOLIO</a></li>
+      <li><a href="#contact">CONTACT US</a></li>
+    </ul>
+  </nav>
+<div class="bg">
+  <section class="hero" id="home">
+    <div class="hero-box">
+      <h1>PROFESSIONAL MAKEUP, PERSONAL MAGIC</h1>
+      <p>Step into a world where every brushstroke tells your story.<br>From subtle glam to bold editorial, we craft looks that empower.<br>Beauty isn't created—it's revealed.</p>
+      <p class="quote">"Every look tells a story—make yours unforgettable."</p>
+      <button class="btn">Book An Appointment</button>
+    </div>
+  </section>
+  </div>
+  <div class="br">
+  <img src="./2.png" class="bg2">
+  <!-- <section class="about"> -->
+    <div class="title-box">
+      <span class="script-text">About</span>
+      <h2>ABOUT</h2>
+    </div>
+    <div class="about-box">
+      <div class="about-info">
+        <h3>Hey there I'm Snowy !</h3>
+        <p>With a delicate touch and a deep love for artistry, I create beauty that feels effortless yet unforgettable.</p>
+        <button class="btn">Learn more about me</button>
+      </div>
+      <div class="about-img-box">
+        <img src="https://picsum.photos/250/350?random=5" alt="Snowy Main" class="img-1">
+        <img src="https://picsum.photos/180/220?random=6" alt="Snowy Portrait" class="img-2">
+      </div>
+    </div>
+  <!-- </section> -->
+  </div>
+
+
+  <section class="services" id="services">
+    <div class="title-box">
+      <span class="script-text">Services</span>
+      <h2>SERVICES</h2>
+    </div>
+
+    <div class="service-box">
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="https://picsum.photos/300/400?random=1" alt="Bridal">
+            <div class="overlay">
+              <span class="script-text">Makeup</span>
+              <h3>BRIDAL</h3>
+            </div>
+          </div>
+          <div class="card-back">
+            <h3>BRIDAL MAKEUP</h3>
+            <ul>
+              <li>High Definition (HD) Finish</li>
+              <li>Premium Lashes Included</li>
+              <li>Long-lasting Waterproof Makeup</li>
+            </ul>
+            <div class="price">From ₹25,000</div>
+            <button class="sub-btn">Reserve Session</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="https://picsum.photos/300/400?random=2" alt="Cinematic">
+            <div class="overlay">
+              <span class="script-text">Makeup</span>
+              <h3>CINEMATIC</h3>
+            </div>
+          </div>
+          <div class="card-back">
+            <h3>CINEMATIC MAKEUP</h3>
+            <ul>
+              <li>Camera Ready Airbrush</li>
+              <li>Dramatic & Bold Look</li>
+              <li>Ideal for Photoshoots</li>
+            </ul>
+            <div class="price">From ₹20,000</div>
+            <button class="sub-btn">Reserve Session</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="https://picsum.photos/300/400?random=3" alt="Soft Glam">
+            <div class="overlay">
+              <span class="script-text">Makeup</span>
+              <h3>SOFT GLAM</h3>
+            </div>
+          </div>
+          <div class="card-back">
+            <h3>SOFT GLAM MAKEUP</h3>
+            <ul>
+              <li>Fresh, natural, glowing finish</li>
+              <li>Lightweight yet long-lasting</li>
+              <li>Ideal for day events</li>
+            </ul>
+            <div class="price">From ₹18,000</div>
+            <button class="sub-btn">Reserve Session</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="https://picsum.photos/300/400?random=4" alt="Party Wear">
+            <div class="overlay">
+              <span class="script-text">Makeup</span>
+              <h3>PARTY WEAR</h3>
+            </div>
+          </div>
+          <div class="card-back">
+            <h3>PARTY WEAR MAKEUP</h3>
+            <ul>
+              <li>Elegant Evening Look</li>
+              <li>Customized Shimmer Eye Makeup</li>
+              <li>Comes with Hair Styling</li>
+            </ul>
+            <div class="price">From ₹12,000</div>
+            <button class="sub-btn">Reserve Session</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="portfolio" id="portfolio">
+    <div class="title-box">
+      <span class="script-text">Portfolio</span>
+      <h2>PORTFOLIO</h2>
+      <p class="subtitle">Real clients. Real beauty. My most loved makeup moments</p>
+    </div>
+
+    <div class="slider-box">
+      <div class="track">
+        <div class="p-card"><img src="https://picsum.photos/250/350?random=10" alt="Work 1"></div>
+        <div class="p-card"><img src="https://picsum.photos/250/350?random=11" alt="Work 2"></div>
+        <div class="p-card"><img src="https://picsum.photos/250/350?random=12" alt="Work 3"></div>
+        <div class="p-card"><img src="https://picsum.photos/250/350?random=13" alt="Work 4"></div>
+        <div class="p-card"><img src="https://picsum.photos/250/350?random=10" alt="Work 1"></div>
+        <div class="p-card"><img src="https://picsum.photos/250/350?random=11" alt="Work 2"></div>
+        <div class="p-card"><img src="https://picsum.photos/250/350?random=12" alt="Work 3"></div>
+        <div class="p-card"><img src="https://picsum.photos/250/350?random=13" alt="Work 4"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonial">
+    <div class="title-box">
+      <span class="script-text">Testimonial</span>
+      <h2>TESTIMONIAL</h2>
+      <p class="subtitle">"Beauty Beyond the Mirror - Client Words"</p>
+    </div>
+
+    <div class="test-box">
+      <div class="t-card">
+        <div class="client">
+          <img src="https://picsum.photos/60/60?random=20" alt="Andresan">
+          <div>
+            <h4>Andresan</h4>
+            <div class="stars">★★★★★</div>
+          </div>
+        </div>
+        <p>"Snowy made me feel like the best version of myself on my wedding day. Her touch is magical!"</p>
+      </div>
+
+      <div class="t-card">
+        <div class="client">
+          <img src="https://picsum.photos/60/60?random=21" alt="Stella">
+          <div>
+            <h4>Stella</h4>
+            <div class="stars">★★★★★</div>
+          </div>
+        </div>
+        <p>"She's not just a makeup artist, she's a confidence booster! Loved my party look."</p>
+      </div>
+
+      <div class="t-card">
+        <div class="client">
+          <img src="https://picsum.photos/60/60?random=22" alt="Priya Suman">
+          <div>
+            <h4>Priya Suman</h4>
+            <div class="stars">★★★★★</div>
+          </div>
+        </div>
+        <p>"Snowy made me feel like the best version of myself on my wedding day. Her touch is magical!"</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" id="contact">
+    <div class="footer-box">
+      <div class="col">
+        <div class="logo">Splendid G</div>
+        <p>"From subtle radiance to intricate elegance, I bring the glow that matches your moment."</p>
+      </div>
+
+      <div class="col">
+        <h4>FOLLOW</h4>
+        <div class="socials">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div class="col">
+        <h4>GET IN TOUCH</h4>
+        <p><i class="fas fa-map-marker-alt"></i> 91/87, 2nd Main Road, Mumbai-64</p>
+        <p><i class="fas fa-phone"></i> 2895-1500-3097</p>
+        <p><i class="fas fa-envelope"></i> snowymakeupartist@gmail.com</p>
+      </div>
+
+      <div class="col">
+        <h4>COURSE</h4>
+        <ul>
+          <li>Bridal Look</li>
+          <li>Glam Pro</li>
+          <li>Daily Glam</li>
+          <li>HD Beauty</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+
+
+
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0b0210;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+.bg{
+  background-image: url("./1.png");
+}
+
+/* TYPOGRAPHY & TITLES */
+.script-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 79px;
+    color: #d4af37;
+    display: block;
+}
+
+.title-box {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.title-box h2 {
+  font-size: 26px;
+  letter-spacing: 3px;
+  margin-top: -37px;
+}
+
+.subtitle {
+  color: #aaaaaa;
+  font-size: 14px;
+  margin-top: 8px;
+  font-style: italic;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 20px 50px 20px 50px;
+  background-color: rgba(11, 2, 16, 0.95);
+  position: absolute;
+  top: 0;
+  width:100%;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 28px;
+  color: #d4af37;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+  padding:10px;
+  margin-left:10px
+}
+
+.nav-links a:hover {
+  width:100%;
+  height:100%;
+  border:1px solid  #d4af37;
+  padding:10px;
+  background-color: #120220;
+}
+
+.menu-check, .menu-btn {
+  display: none;
+}
+
+/* HERO SECTION */
+.hero {
+  text-align: center;
+  padding: 250px 20px;
+  
+}
+
+.hero h1 {
+  font-size: 32px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  color: #cccccc;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.hero .quote {
+  color: #d4af37;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+.btn {
+  padding: 12px 30px;
+  border-radius: 25px;
+  border: none;
+  background-color: #d4af37;
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* ABOUT SECTION (Polaroid Overlap) */
+.br{
+  min-height:100vh;
+  padding: 80px 50px;
+}
+.about {
+  padding: 80px 50px;
+  /* background-color: radial-gradient(circle at right, #2a0845 0%, #0b0210 70%); */
+}
+.bg2{
+  width:100%;
+  height:100%;
+  object-fit: cover;
+  background-image: url("./2.png");
+}
+.about-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.about-info {
+  max-width: 400px;
+}
+
+.about-info h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 32px;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.about-info p {
+  font-size: 14px;
+  color: #cccccc;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.about-img-box {
+  position: relative;
+  width: 320px;
+  height: 380px;
+}
+
+.img-1 {
+    width: 280px;
+    height: 350px;
+    border-radius: 4px;
+    object-fit: cover;
+    border: 16px solid white;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.img-2 {
+    position: absolute;
+    right: -52px;
+    bottom: 111px;
+    width: 180px;
+    height: 200px;
+    border-radius: 4px;
+    object-fit: cover;
+    border: 13px solid #ffffff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+}
+/* SERVICES SECTION (3D FLIP) */
+.services {
+  padding: 80px 20px;
+}
+
+.service-box {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 250px;
+  height: 360px;
+  perspective: 1000px;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s ease;
+  transform-style: preserve-3d;
+  border-radius: 16px;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.card-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  background-color: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+}
+
+.card-back {
+  background-color: linear-gradient(135deg, #230a33, #43165b);
+  transform: rotateY(180deg);
+  padding: 25px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.card-back h3 {
+  font-size: 16px;
+  color: #d4af37;
+}
+
+.card-back ul {
+  list-style: none;
+  text-align: left;
+}
+
+.card-back ul li {
+  font-size: 13px;
+  color: #dddddd;
+  margin-bottom: 8px;
+}
+
+.price {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.sub-btn {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+/* PORTFOLIO SECTION */
+.portfolio {
+  padding: 50px 0;
+  background-color: linear-gradient(to bottom, #0b0210, #170524, #0b0210);
+}
+
+.slider-box {
+  width: 100%;
+  overflow: hidden;
+}
+
+.track {
+  display: flex;
+  gap: 100px;
+  width: max-content; /* important */
+  animation: scrollTrack 4s linear infinite;
+}
+
+.track:hover {
+  animation-play-state: paused;
+}
+
+.p-card {
+  width: 280px;
+  height: 350px;
+  overflow: hidden;
+  
+}
+
+.p-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes scrollTrack {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* TESTIMONIAL */
+.testimonial {
+  padding: 80px 40px;
+}
+
+.title-box {
+    text-align: center;
+    margin-bottom: 70px;
+}
+.test-box {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.t-card {
+  background: rgba(43, 20, 58, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 3px 20px 20px 20px;
+  width: 280px;
+}
+
+.client {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.client img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+    top: -32px;
+}
+
+.client h4 {
+  font-size: 15px;
+}
+
+.stars {
+  color: #d4af37;
+  font-size: 12px;
+}
+
+.t-card p {
+  font-size: 12px;
+  color: #cccccc;
+  line-height: 1.4;
+}
+
+/* FOOTER */
+.footer {
+  background: linear-gradient(180deg, #180829 0%, #311152 100%);
+  padding: 60px 40px 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.col {
+  flex: 1;
+  min-width: 200px;
+}
+
+.col h4 {
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.col p, .col ul li {
+  font-size: 12px;
+  color: #bbbbbb;
+  margin-bottom: 8px;
+}
+
+.col ul {
+  list-style: none;
+}
+
+.socials {
+  display: flex;
+  gap: 15px;
+}
+
+.socials a {
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.socials a:hover {
+  color: #d4af37;
+}
+
+.col p i {
+  color: #d4af37;
+  margin-right: 6px;
+}
+
+/* RESPONSIVE MEDIA QUERIES */
+@media screen and (min-width:300px) and (max-width: 768px) {
+  body{
+    width:100%
+  }
+  .navbar {
+    padding: 15px 25px;
+  }
+
+  .menu-btn {
+    display: block;
+    color: #d4af37;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #170524;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 25px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: none;
+  }
+
+  .menu-check:checked ~ .nav-links {
+    display: flex;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  .about {
+    padding: 50px 20px;
+  }
+
+  .about-info {
+    text-align: center;
+  }
+
+  .about-img-box {
+    width: 280px;
+    height: 330px;
+  }
+
+  .img-1 {
+        width: 267px;
+        height: 314px;
+    }
+  
+  .test-box {
+    display: flex;
+    justify-content: center;
+    gap: 51px;
+    flex-wrap: wrap;
+} 
+  .img-2 {
+    width: 152px;
+    height: 180px;
+    top:64px
+  }
+
+  .col {
+    min-width: 100%;
+    text-align: center;
+  }
+
+  .socials {
+    justify-content: center;
+  }
+}
